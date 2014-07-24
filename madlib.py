@@ -10,8 +10,4 @@ preposition1 = input("Name a posional preposition ")
 verb2 = input("Name a verb ")
 adjectiveest1 = input("Name a adjective ending in est ")
 emotion1 = input("Name a self emotion ")
-print("One day " + name1 + " was " + verbing1 + " " + preposition1 + " a(n) " + noun1 + " and decided that " + name2 + " and I should have a competition where we have to " + verb1 + " " + preposition1 + " a(n) " + noun1 + " and then " + verb2 + " " + preposition1 + " a(n) " + noun2 + " for 5 minutes and whoever could do it the " + adjectiveest1 + " wins. So " + name1 + " texted " + name2 + " about the competition and asked him/her if (s)he wanted to compete. Sure! " + name2 + " said as (s)he rode his/her bike to " + name1 + "'s house. " + name2 + " was " + emotion1 + " that (s)he was invited. as soon as (s)he made it " + name1 + " noticed that " + name2 + " looked " + adjectiveer1 + " than normal. " + name2 + " said that (s)he's like that because it makes him/her " + verb1 + " " + adjectiveer2 + ". " + name1 + " was intimidated because of that, but was still confident. they started the compitition. It was a close call, but " + name1 + " won!\n>")
-
-       
-    
-    
+print("One day {} was {} {} a(n) {} and decided that {} and I should have a competition where we have to {} {} a(n) {} and then {} {} a(n) {} for 5 minutes and whoever could do it the {} wins. So {} texted {} about the competition and asked him/her if (s)he wanted to compete. Sure! {} said as (s)he rode his/her bike to {}'s house. {} was {} that (s)he was invited. as soon as (s)he made it {} noticed that {} looked {} than normal. {} said that (s)he's like that because it makes him/her {} {}. {} was intimidated because of that, but was still confident. they started the compitition. It was a close call, but {} won!\n>")
