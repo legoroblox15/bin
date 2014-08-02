@@ -32,7 +32,7 @@ if brothers == "0":
 
 person1 = "Hi, my name is {}, I am {}, and my favorite color".format(name, age)
 person2 = "is {}. In my free time, I like to {}. I am".format(color, free)
-person3 = "{} '{} and weight {} lbs. My favorite food is".format(ft, inc, lb)
+person3 = "{} '{} and weigh {} lbs. My favorite food is".format(ft, inc, lb)
 person4 = "{} and I have {}, {}, {}, hair".format(food, length, hair, hairstyle)
 person5 = ". I grew up in a {} area and I have {} sister(".format(area, sisters)
 person6 = "s) and {} brother(s). My family was in the".format(brothers)
