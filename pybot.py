@@ -2,12 +2,19 @@ import random
 import time
 import math
 import VIRUS
+
+##Pybot 1.0
+##Made by legoroblox15
+##Contributers: ender_wing for idea for contributers list :)
+##MrRob for teching me python :D
+##gabeart10 for insperation
 #----------------------------------------------------------------------------------------------------------------------------------------#
 def shutdown():
     print('''
 Shuting down...''')
     time.sleep(3)
 #----------------------------------------------------------------------------------------------------------------------------------------#
+
 def help():
     
     print('''
@@ -23,6 +30,142 @@ help: will tell you all the avalable commands in that section
 ''')
 #----------------------------------------------------------------------------------------------------------------------------------------#
 def math():
+    def shape():
+        def shapehelp():
+            print('''
+Commands you can use at this section: 3D, 2D
+
+About: either 2D shapes or 3D shapes, you decide
+
+Commands you can use all the time (and what they do):
+
+return: will take you back a section (if you type return at home, it will do a shutdown sequence)
+
+help: will tell you all the avalable commands in that section
+''')
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
+    def 2d():
+        def 2dhelp():
+            print('''
+Commands you can use at this section: square, triangle, circle, rhombus, parallelagram
+
+About: either 2D shapes or 3D shapes, you decide
+
+Commands you can use all the time (and what they do):
+
+return: will take you back a section (if you type return at home, it will do a shutdown sequence)
+
+help: will tell you all the avalable commands in that section
+''')
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
+        while True:
+            dimention = input('''
+Is the shape 2D or 3D?\nPybot>Math>Shapes> ''').strip().lower()
+            if dimention == 'return':
+                break
+            elif dimention == 'help':
+                shapehelp()
+            elif dimention == '3D':
+                3d()
+            elif dimention ==  '2D':
+                2d()
+            else:
+                print('''
+That is not a command, for a list of commands, type 'help' ''')
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
+    def speed():
+        while True:
+            distance = input('''
+What is your distance?\nPybot>Math>Speed> ''')
+            if distance == 'help':
+                print('''
+                           D
+Equation:     S = ------
+                           T
+
+Note: don't include the unit of messure in your measurements
+    
+Commands you can use all the time (and what they do):
+
+return: will take you back a section (if you type return at home, it will do a shutdown sequence)
+
+help: will tell you all the avalable commands in that section
+''')
+            elif distance == 'return':
+                break
+            else:
+                time = input('''
+What is your time?\nPybot>Math>Speed> ''')
+                distance = float(distance)
+                time = float(time)
+                speed = distance / time
+                speed = str(speed)
+                print(speed + ' u/t')
+                break
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
+    def acceleration():
+        while True:
+            intialvelocity = input('''
+What is your intial velocity?\nPybot>Math>Speed> ''')
+            if intialvelocity == 'help':
+                print('''
+                         Vf    -    Vi
+Equation:     A = ---------------
+                               T
+                               
+Note: don't include the unit of messure in your measurements
+    
+Commands you can use all the time (and what they do):
+
+return: will take you back a section (if you type return at home, it will do a shutdown sequence)
+
+help: will tell you all the avalable commands in that section
+''')
+            elif intialvelocity == 'return':
+                break
+            else:
+                finalvelocity = input('''
+What is your final velocity?\nPybot>Math>Speed> ''')
+                time = input('''
+What is your time?\nPybot>Math>Speed> ''')
+                time = float(time)
+                intialvelocity = float(intialvelocity)
+                finalvelocity = float(finalvelocity)
+                vi_minus_vf = finalvelocity - intialvelocity
+                acceleration = vi_minus_vf / time
+                acceleration = str(acceleration)
+                print(acceleration + ' u/t^2')
+                break
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
+    def force():
+        while True:
+            mass = input('''
+What is your mass?\nPybot>Math>Speed> ''')
+            if mass == 'help':
+                print('''    
+Equation:     F = ma
+
+Note: don't include the unit of messure in your measurements
+    
+Commands you can use all the time (and what they do):
+
+return: will take you back a section (if you type return at home, it will do a shutdown sequence)
+
+help: will tell you all the avalable commands in that section
+''')
+            elif mass == 'return':
+                break
+            else:
+                acceleration = input('''
+What is your acceleration?\nPybot>Math>Speed> ''')
+                mass = float(mass)
+                acceleration = float(acceleration)
+                force = mass * acceleration
+                force = str(force)
+                print(force + ' N')
+                break
+
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
     def calculater():
         def calculaterhelp():
             print('''
@@ -63,7 +206,7 @@ What is you equation?\nHome>Math>Calculater> ''')
                 a = a
             elif '/' in equation:
                 a = a
-            elif '**' in equation:
+            elif '^' in equation:
                 a = a
             elif '/=' in equation:
                 a = a
@@ -78,7 +221,7 @@ Error! try again''')
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#    
     def mathhelp():
         print('''
-Commands you can use at this section: calculater, speed, acceleration
+Commands you can use at this section: calculater, speed, acceleration, force, shape
 
 About: find answers to math problems!
 
@@ -103,6 +246,14 @@ What would you like to use?\nHome>Math> ''')
             break
         elif operation == 'calculater':
             calculater()
+        elif operation == 'speed':
+            speed()
+        elif operation == 'acceleration':
+            acceleration()
+        elif operation == 'force':
+            force()
+        elif operation == 'shape':
+            shape()
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
         else:
             print('''
