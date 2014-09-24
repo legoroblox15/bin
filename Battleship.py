@@ -3,39 +3,38 @@ import time
 
 class Ship():
     size = None
+    char = None
 
 class PatrolBoat(Ship):
     size = 2
+    char = 'P'
 
 class Destroyer(Ship):
     size = 3
+    char = 'D'
 
 class Submarine(Ship):
     size = 3
+    char = 'S'
 
 class Battleship(Ship):
     size = 4
+    char = 'B'
 
 class AircraftCarrier(Ship):
+    def __init__(self):
+        self.location = None
+    
     size = 5
+    char = 'A'
+player_carrier = AircraftCarrier()
+cpu_carrier = AircraftCarrier()
 #---------------------------
-print('prepare for battle!')
-
 w = '~'
 
 hit = '*'
 
 miss = '@'
-
-patrol = 'P'
-
-destroy = 'D'
-
-submarine = 'S'
-
-battleship = 'B'
-
-aircraft = 'A'
 
 grid = [
     ['  ', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,],
@@ -51,17 +50,8 @@ grid = [
     ['I ', w, w, w, w, w, w, w, w, w,]
 ]
 
-grid[2][3] = patrol
-
-for row in grid:
-    for col in row:
-        print(col, end = ' ')
-    print('')
-
-
-
-        
-            
-                
-
-
+class Board():
+    for row in grid:
+        for col in row:
+            print(col, end = ' ')
+        print('')

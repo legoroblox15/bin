@@ -44,9 +44,9 @@ return: will take you back a section (if you type return at home, it will do a s
 help: will tell you all the avalable commands in that section
 ''')
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
-    def 2d():
-        def 2dhelp():
-            print('''
+        def twod():
+            def twodhelp():
+                print('''
 Commands you can use at this section: square, triangle, circle, rhombus, parallelagram
 
 About: either 2D shapes or 3D shapes, you decide
@@ -56,7 +56,7 @@ Commands you can use all the time (and what they do):
 return: will take you back a section (if you type return at home, it will do a shutdown sequence)
 
 help: will tell you all the avalable commands in that section
-''')
+    ''')
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
         while True:
             dimention = input('''
@@ -65,12 +65,27 @@ Is the shape 2D or 3D?\nPybot>Math>Shapes> ''').strip().lower()
                 break
             elif dimention == 'help':
                 shapehelp()
-            elif dimention == '3D':
-                3d()
-            elif dimention ==  '2D':
-                2d()
+            elif dimention == '3d':
+                threed()
+            elif dimention ==  '2d':
+                twod()
             else:
                 print('''
+That is not a command, for a list of commands, type 'help' ''')
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
+            while True:
+                dimention = input('''
+What shape?\nPybot>Math>Shapes>2D> ''').strip().lower()
+                if dimention == 'return':
+                    break
+                elif dimention == 'help':
+                    twodhelp()
+                elif dimention == 'return':
+                    break
+                elif dimention ==  'square':
+                    a = a
+                else:
+                    print('''
 That is not a command, for a list of commands, type 'help' ''')
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#
     def speed():
@@ -193,7 +208,7 @@ help: will tell you all the avalable commands in that section
         while True:
             
             equation = input('''
-What is you equation?\nHome>Math>Calculater> ''')
+What is you equation?\nPybot>Math>Calculater> ''')
 
             equation = equation.strip()
             equation = equation.lower()
@@ -235,7 +250,7 @@ help: will tell you all the avalable commands in that section
     while True:
         
         operation = input('''
-What would you like to use?\nHome>Math> ''')
+What would you like to use?\nPybot>Math> ''')
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#        
         operation = operation.strip()
         operation = operation.lower()
@@ -264,7 +279,7 @@ That is not a command, for a list of all the commands, type 'help' ''')
 while True:
     command = input('''
 Hello, I am Pybot, what would you like me to do? for a list of all the
-commands, type 'help'\nHome> ''')
+commands, type 'help'\nPybot> ''')
 
     command = command.strip()
     command = command.lower()

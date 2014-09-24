@@ -1,7 +1,9 @@
-fin = open('words.txt')
-for line in fin:
-    words = line.strip()
-randomword = random.choice(words)
-print(randomword)
+import random
+wordfile = open('C:\words.txt')
 
+for line in wordfile:
+    for word in wordfile:
+        print(word)
+        
+        
 
