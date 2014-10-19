@@ -1,7 +1,7 @@
-import words
+import wordlist
 
 print('Loading random word...')
-randomword = words.randomword()
+randomword = wordlist.randomword()
 
 def printman():
     wordnumber = 0
