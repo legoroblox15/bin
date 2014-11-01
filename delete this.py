@@ -1,11 +1,14 @@
 import wordlist
+import time
 
 while True:
+    adjective = wordlist.randomadj()
     noun = wordlist.randomnoun()
-    adj = wordlist.randomadj()
-    a = '{} {}'
-    a = a.format(adj, noun)
+    verb = wordlist.randomverb()
+    adverb = wordlist.randomadverb()
+    a = "{} {}"
+    a = a.format(adjective, noun)
     print(a)
-    input()
+    time.sleep(2)
 
 
