@@ -3,12 +3,11 @@ import time
 
 while True:
     adjective = wordlist.randomadj()
-    noun = wordlist.randomnoun()
-    verb = wordlist.randomverb()
-    adverb = wordlist.randomadverb()
-    a = "{} {}"
-    a = a.format(adjective, noun)
+    a_noun = wordlist.randomnoun()
+    b_noun = wordlist.randomnoun()
+    a = "{}s comes form {} {}s"
+    a = a.format(a_noun, adjective, b_noun)
     print(a)
-    time.sleep(2)
+    time.sleep(7)
 
 
