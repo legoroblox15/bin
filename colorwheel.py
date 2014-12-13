@@ -3,7 +3,7 @@ import turtle
 bob = turtle.Turtle()
 
 bob.speed(0)
-bob.pensize(7)
+bob.pensize(3)
 bob.left(90)
 bob.pu()
 bob.forward(334.3949044585987)
