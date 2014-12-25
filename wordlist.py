@@ -5,9 +5,9 @@
 import random
 wordfile = open('C:\words\words.txt')
 adjfile = open('C:\words\jectives.txt')                 # If you are wondering why the first letters are
-verbfile = open('C:\words\erbs.txt')                    # left out in these 'txt' files, it's because Python
+verbfile = open('C:\words\erbs.txt')                    # left out in some of these 'txt' files, it's because Python
 adverbfile = open('C:\words\dverbs.txt')             # will give an error otherwise
-nounfile = open('C:\words\ouns.txt')                 #
+nounfile = open('C:\words\ouns.txt')
 pronounfile = open('C:\words\pronouns.txt')
 
 adjs = []
@@ -47,6 +47,26 @@ for line in nounfile:
         word = word.strip()
         nouns.append(word)
         
+def words():
+    return words
+# Syntax for assigning this to a variable: variable = wordlist.words()
+
+def adjs():
+    return adjs
+# Syntax for assigning this to a variable: variable = wordlist.adjs()
+
+def verbs():
+    return verbs
+# Syntax for assigning this to a variable: variable = wordlist.verbs()
+
+def pronouns():
+    return pronouns
+# Syntax for assigning this to a variable: variable = wordlist.pronouns()
+
+def nouns():
+    return nouns
+# Syntax for assigning this to a variable: variable = wordlist.nouns()
+
 def randomword():
     randomword = random.choice(words)
     return randomword
