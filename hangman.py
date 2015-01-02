@@ -1,6 +1,10 @@
 import wordlist
 difficultymax = input('Maximum letters?\n>>> ')
+if difficultymax == '':
+    difficultymax = 0
 difficultymin = input('Minimum letters?\n>>> ')
+if difficultymin == '':
+    difficultymin = 0
 difficultymax = int(difficultymax)
 difficultymin = int(difficultymin)
 print('Loading random word...')

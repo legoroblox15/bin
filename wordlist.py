@@ -47,25 +47,29 @@ for line in nounfile:
         word = word.strip()
         nouns.append(word)
         
-def words():
+def allwords():
     return words
-# Syntax for assigning this to a variable: variable = wordlist.words()
+# Syntax for assigning this to a variable: variable = wordlist.allwords()
 
-def adjs():
+def alladjs():
     return adjs
-# Syntax for assigning this to a variable: variable = wordlist.adjs()
+# Syntax for assigning this to a variable: variable = wordlist.alladjs()
 
-def verbs():
+def allverbs():
     return verbs
-# Syntax for assigning this to a variable: variable = wordlist.verbs()
+# Syntax for assigning this to a variable: variable = wordlist.allverbs()
 
-def pronouns():
+def alladverbs():
+    return adverbs
+# Syntax for assigning this to a variable: variable = wordlist.allverbs()
+
+def allpronouns():
     return pronouns
-# Syntax for assigning this to a variable: variable = wordlist.pronouns()
+# Syntax for assigning this to a variable: variable = wordlist.allpronouns()
 
-def nouns():
+def allnouns():
     return nouns
-# Syntax for assigning this to a variable: variable = wordlist.nouns()
+# Syntax for assigning this to a variable: variable = wordlist.allnouns()
 
 def randomword():
     randomword = random.choice(words)
